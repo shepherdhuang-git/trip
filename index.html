@@ -3,107 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Milano: The Blueprint of Future & Tradition</title>
+    <title>義大利深度壯遊 - Shepherd's Journey</title>
     <style>
-        :root {
-            --milan-gold: #c5a059;
-            --milan-night: #1a1a2e;
-            --accent: #e67e22;
-            --bg: #fdfdfd;
-        }
-        body {
-            font-family: 'PingFang TC', 'Microsoft JhengHei', sans-serif;
-            background-color: var(--bg);
-            margin: 0; padding: 0; color: var(--milan-night); line-height: 1.7;
-        }
-        header {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1513581166391-887a96ddeafd?auto=format&fit=crop&w=1200&q=80');
-            background-size: cover; background-position: center;
-            color: white; padding: 4rem 1rem; text-align: center;
-        }
-        .container { max-width: 900px; margin: auto; padding: 1.5rem; }
-        .section-card {
-            background: white; border-radius: 20px; padding: 2rem; margin-bottom: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-top: 6px solid var(--milan-gold);
-        }
-        .highlight { color: var(--milan-gold); font-weight: bold; }
-        .story-text { font-style: italic; border-left: 3px solid #eee; padding-left: 1rem; color: #555; margin: 1.5rem 0; }
-        
-        .tag-container { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 1rem; }
-        .tag { background: #eee; padding: 5px 15px; border-radius: 50px; font-size: 0.8rem; font-weight: 600; }
-        .tag.eat { background: #ffebee; color: #c62828; }
-        .tag.history { background: #e3f2fd; color: #1565c0; }
-        .tag.shop { background: #f3e5f5; color: #7b1fa2; }
-
-        .feature-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1.5rem; }
-        
-        /* 響應式優化 */
-        @media (max-width: 600px) {
-            .feature-grid { grid-template-columns: 1fr; }
-            header { padding: 2rem 1rem; }
-        }
-        
-        .btn-interact {
-            display: inline-block; width: 100%; padding: 12px; background: var(--milan-gold);
-            color: white; text-align: center; border-radius: 10px; text-decoration: none; font-weight: bold; margin-top: 1rem;
-        }
+        :root { --italy-green: #008C45; --italy-white: #F4F4F4; --italy-red: #CD212A; --gold: #D4AF37; }
+        body { font-family: 'Segoe UI', 'PingFang TC', sans-serif; background: #fff; color: #333; margin: 0; }
+        .hero { position: relative; height: 50vh; background: url('https://images.unsplash.com/photo-1529260839312-41777c18239d?q=80&w=1000') center/cover; display: flex; align-items: center; justify-content: center; color: white; text-align: center; }
+        .hero::after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.4); }
+        .hero h1 { position: relative; z-index: 1; font-size: 2.5rem; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); }
+        .section { padding: 30px 20px; max-width: 800px; margin: auto; }
+        .card { border-radius: 15px; overflow: hidden; background: white; box-shadow: 0 10px 20px rgba(0,0,0,0.1); margin-bottom: 40px; }
+        .card-img { height: 250px; background-size: cover; background-position: center; }
+        .card-content { padding: 25px; }
+        .tag { display: inline-block; padding: 5px 12px; background: var(--italy-green); color: white; border-radius: 50px; font-size: 0.8rem; margin-bottom: 10px; }
+        .pro-story { font-style: italic; color: #666; border-left: 4px solid var(--gold); padding-left: 15px; margin: 15px 0; }
+        .buy-tip { background: #fef9e7; padding: 15px; border-radius: 10px; border: 1px solid #f9ebbe; margin-top: 15px; }
+        .transport-lock { background: #fff5f5; color: var(--italy-red); border: 1px dashed var(--italy-red); padding: 10px; text-align: center; font-weight: bold; margin-top: 15px; }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>MILANO</h1>
-    <p>數據治理與美學的巔峰會談</p>
-</header>
+<div class="hero">
+    <h1>永恆之美：義大利 15 日</h1>
+</div>
 
-<div class="container">
-    
-    <div class="section-card">
-        <div class="tag-container">
-            <span class="tag history">歷史與建築</span>
-            <span class="tag shop">精華商業區</span>
-        </div>
-        <h2>米蘭大教堂：垂直的數據森林</h2>
-        <div class="story-text">
-            「大教堂的建造歷時近 600 年，這是一場跨世紀的專案管理。每一尊雕塑都是一個獨立的 Object，卻在龐大的架構下達到完美的一致性 (Consistency)。」
-        </div>
-        <p><b>多樣化推薦：</b> 
-            除了登頂俯瞰，別忘了走進教堂地下室參觀 <span class="highlight">聖特庫拉遺跡 (Archaeological Area)</span>。這裡保留了 4 世紀的洗禮堂，讓您看見現代米蘭地基之下的羅馬法律起源。
-        </p>
-        <p><b>玩樂點：</b> 教堂旁的 <b>艾曼紐二世迴廊</b>。請找到地板上的「公牛馬賽克」，據說踩著公牛的睪丸轉三圈會帶來好運——這是米蘭最經典的互動儀式。</p>
-    </div>
-
-    <div class="section-card">
-        <div class="tag-container">
-            <span class="tag history">防禦治理</span>
-            <span class="tag eat">食尚體驗</span>
-        </div>
-        <h2>斯福爾扎城堡：中世紀的 AI Guardrail</h2>
-        <div class="story-text">
-            「城堡的厚重圍牆是當年的物理防火牆。現在，這裡存放著米開朗基羅最後的傑作《聖母慟子像》，保護著人類文明最脆弱的軟體：藝術。」
-        </div>
-        <p><b>多樣化推薦：</b> 
-            城堡後方的 <b>森皮奧內公園 (Parco Sempione)</b> 是當地人野餐的首選。推薦您與妻子在這裡買一份 <span class="highlight">Luini 油炸三明治 (Panzerotti)</span>，感受悠閒的米蘭午後。
-        </p>
-        <div class="feature-grid">
-            <div style="background: #fff8f0; padding: 1rem; border-radius: 10px;">
-                <strong>🍴 必吃：米蘭燉飯 (Risotto alla Milanese)</strong>
-                <p>加入了昂貴番紅花的金色燉飯，象徵著這座城市的財富與品質標準。</p>
-            </div>
-            <div style="background: #f0f7ff; padding: 1rem; border-radius: 10px;">
-                <strong>🛍️ 必購：Peck 百年食材店</strong>
-                <p>米蘭的「數據資產庫」。這裡的起司、陳年醋與松露產品是送禮與自用的最高規格。</p>
-            </div>
+<div class="section">
+    <div class="card">
+        <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1520440229334-962aee48c9ba?q=80&w=800')"></div>
+        <div class="card-content">
+            <span class="tag">米蘭 | 時尚與信仰</span>
+            <h2>石雕的交響樂：米蘭大教堂</h2>
+            <div class="pro-story">「站在屋頂時，請屏住呼吸。那135座尖塔像是要刺向天空，而你正行走在上帝的調色盤上。」</div>
+            <p>在米蘭的 1.5 天，除了奢華的精品店，一定要去 **Brera 區** 走走，那是當地的藝術心臟，藏著最地道的米蘭咖啡味。</p>
+            <div class="buy-tip">🛍️ <b>必買建議：</b> Marvis 牙膏 (經典薄荷)、米蘭百年品牌 Cova 的巧克力。</div>
+            <div class="transport-lock">🚆 4/24 16:35 行程淨空，準備前往威尼斯</div>
         </div>
     </div>
 
-    <div class="section-card" style="border-top: 6px solid #2c3e50;">
-        <h2>給 Shepherd 的專業小抄</h2>
-        <p><b>烘焙視角：</b> 米蘭是 <b>Panettone (義大利聖誕蛋糕)</b> 的發源地。雖然 4 月不是聖誕節，但在著名的咖啡館如 <span class="highlight">Pasticceria Cova</span>，您仍能品嚐到頂級的發酵工藝，這對熱愛可麗露與司康的您來說，是絕佳的技術考察。</p>
-        <p><b>PM 視角：</b> 米蘭的 <b>城市導引系統</b> 做得極好。在移動中，可以觀察他們如何在歷史古蹟中崁入現代地鐵與導航，這就是最好的系統更新範例。</p>
-        <a href="#" class="btn-interact">已記憶 4/24 前一小時搭車管制清單 🚆</a>
+    <div class="card">
+        <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1514890547357-a9ee2887a35f?q=80&w=800')"></div>
+        <div class="card-content">
+            <span class="tag">威尼斯 | 水上的幻夢</span>
+            <h2>面具背後的榮華：總督宮</h2>
+            <div class="pro-story">「當貢多拉划過安靜的小巷，水面的倒影閃爍，你會分不清這裡是現實還是16世紀的威尼斯共和國。」</div>
+            <p>3 天的時間足夠讓你避開聖馬可的人潮，去 **Cannaregio 區** 找一間水邊餐廳，點一份墨魚麵與 Spritz。</p>
+            <div class="buy-tip">🛍️ <b>必買建議：</b> Murano 手工玻璃杯 (透光度極高)、布拉諾蕾絲手工藝品。</div>
+            <div class="transport-lock">🚆 4/27 09:17 行程淨空，前往佛羅倫斯</div>
+        </div>
     </div>
 
+    <div class="card">
+        <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1541123356219-284ebe98ae3b?q=80&w=800')"></div>
+        <div class="card-content">
+            <span class="tag">佛羅倫斯 | 文藝復興靈魂</span>
+            <h2>圓頂下的輝煌：聖母百花大教堂</h2>
+            <div class="pro-story">「每一塊磚的堆疊都是布魯內萊斯基對地心引力的嘲諷。當你走在狹長的圓頂階梯，汗水會換來最無敵的翡冷翠全景。」</div>
+            <p>第 9 天的比薩斜塔行程，建議在回程時於 **中央市場** 停下，那裡的牛肚包是托斯卡尼的靈魂食物。</p>
+            <div class="buy-tip">🛍️ <b>必買建議：</b> Santa Maria Novella 香水、頂級佛羅倫斯皮帶。</div>
+            <div class="transport-lock">🚆 4/30 09:03 行程淨空，啟程羅馬</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1552832230-c0197dd311b5?q=80&w=800')"></div>
+        <div class="card-content">
+            <span class="tag">羅馬 | 永恆之城</span>
+            <h2>塵封的榮耀：羅馬競技場</h2>
+            <div class="pro-story">「即使是廢墟，羅馬也有著壓倒性的氣勢。在夕陽灑下時，坐在萬神殿前的噴泉旁，看著2000年的圓頂，時間會在此停滯。」</div>
+            <p>羅馬的 5 天是深度細讀。推薦去 **Trastevere** 的巷弄迷路，那裡的紅酒與 Pasta 才是真正的羅馬。</div>
+            <div class="buy-tip">🛍️ <b>必買建議：</b> 金杯咖啡豆 (Tazza d'Oro)、義大利製手工皮革手套。</div>
+        </div>
+    </div>
 </div>
 
 </body>
